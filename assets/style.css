@@ -6,11 +6,12 @@ body {
     width: 100%;
     height: 100vh;
 }
-.text-transform{
-    text-transform: uppercase ;
+
+.text-transform {
+    text-transform: uppercase;
     font-weight: bold;
     display: none;
-    margin: 34px 0 25px 0 ;
+    margin: 34px 0 25px 0;
 }
 
 
@@ -127,7 +128,8 @@ main {
     opacity: 0.9;
 
 }
-.answer-size{
+
+.answer-size {
     width: 60px;
     height: 60px;
 }
@@ -147,8 +149,9 @@ main {
     font-size: 19px;
 
 }
-.features-one{
-  text-align: center ;
+
+.features-one {
+    text-align: center;
 }
 
 .features .features-one {
@@ -158,7 +161,8 @@ main {
     align-items: center;
     text-align: center;
 }
-.features-two .features-one{
+
+.features-two .features-one {
     display: flex;
     align-items: center;
     flex-direction: column;
