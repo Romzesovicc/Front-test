@@ -1,49 +1,63 @@
-let openData = () => {
-    const request = new XMLHttpRequest();
-    request.open('GET', 'https://jsonplaceholder.typicode.com/photos', true);
-    request.send();
-    request.onload = () => {
-        let arr = JSON.parse(request.response);
 
-        let getRandomInt = arr => {
-
-            return Math.floor(Math.random() * Math.floor(arr - 1));
+function fetchData() {
+    return new Promise((resolve, reject) => {
+        const request = new XMLHttpRequest();
+        request.open('GET', 'https://jsonplaceholder.typicode.com/photos', true);
+        request.send();
+        request.onload = () => {
+            resolve(JSON.parse(request.response));
         };
-
-        let arr2 = [];
-        for (let i = 0; i < 6; i++) {
-            arr2.push(arr[getRandomInt(arr.length)]);
+        request.onerror = () => {
+            reject(JSON.parse(request.response));
         }
-        const titleData = arr2.map(item => item.title);
-        const thumbnailUrlData = arr2.map(item => item.thumbnailUrl);
+    });
+}
 
-        let imagesDelete = document.querySelectorAll('.no_remove');
+function getRandomInt(maximumInt) {
+    return Math.floor(Math.random() * Math.floor(maximumInt));
+}
 
-        for (let item of imagesDelete) {
-            item.classList.add('remove');
-        }
+const renderData = () => {
+    fetchData()
+        .then(response => {
+            const fillArrayWithRandomElements = (arr, count) => {
+                if (arr.length < count) {
+                    const el = response[getRandomInt(response.length)];
+                    if (arr.indexOf(el) < 0) arr.push(el);
+                    return fillArrayWithRandomElements(arr, count);
+                }
+                return arr;
+            };
+            let imagesDelete = document.querySelectorAll('.no-remove');
 
-        let textData = document.querySelectorAll('.text_transform');
-        for (let item of textData) {
-            item.style.display = 'block'
-        }
+            for (let item of imagesDelete) {
+                item.classList.add('remove');
+            }
 
-        let answer = document.querySelectorAll('.answer');
-        for (let item of answer) {
-            item.classList.add('answerSize')
-        }
+            let textData = document.querySelectorAll('.text-transform');
+            for (let item of textData) {
+                item.style.display = 'block'
+            }
 
-        document.getElementById("answer2").innerHTML = titleData[0];
-        document.getElementById('answer').style.background = `url(${thumbnailUrlData[0]})`;
-        document.getElementById('answer3').style.background = `url(${thumbnailUrlData[1]})`;
-        document.getElementById("answer4").innerHTML = titleData[1];
-        document.getElementById('answer5').style.background = `url(${thumbnailUrlData[2]})`;
-        document.getElementById("answer6").innerHTML = titleData[2];
-        document.getElementById('answer7').style.background = `url(${thumbnailUrlData[3]})`;
-        document.getElementById("answer8").innerHTML = titleData[3];
-        document.getElementById('answer9').style.background = `url(${thumbnailUrlData[4]})`;
-        document.getElementById("answer10").innerHTML = titleData[4];
-        document.getElementById('answer11').style.background = `url(${thumbnailUrlData[4]})`;
-        document.getElementById("answer12").innerHTML = titleData[4];
-    }
-};
+            let answer = document.querySelectorAll('.answer');
+            for (let item of answer) {
+                item.classList.add('answer-size')
+            }
+
+            const parentsFeaturesOne = document.querySelectorAll('.features-one');
+            const randomElements = fillArrayWithRandomElements([], parentsFeaturesOne.length);
+
+            for (let i = 0; i < parentsFeaturesOne.length; i++) {
+                const textEl = parentsFeaturesOne[i].querySelector('.text-transform');
+                if (textEl) {
+                    textEl.innerHTML = randomElements[i].title;
+                }
+
+                const backgroundEl = parentsFeaturesOne[i].querySelector('.answer');
+                if (backgroundEl) backgroundEl.style.background = `url(${randomElements[i].thumbnailUrl})`
+            }
+        })
+        .catch(error => {
+            alert(error)
+        });
+}

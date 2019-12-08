@@ -6,7 +6,7 @@ body {
     width: 100%;
     height: 100vh;
 }
-.text_transform{
+.text-transform{
     text-transform: uppercase ;
     font-weight: bold;
     display: none;
@@ -14,7 +14,7 @@ body {
 }
 
 
-.openMenu {
+.open-menu {
     display: none;
 }
 
@@ -22,7 +22,7 @@ body {
     display: none;
 }
 
-.ContainerHeader {
+.container-header {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -52,7 +52,7 @@ main {
     width: 100%
 }
 
-.mainContainer {
+.main-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,7 +84,7 @@ main {
     margin-top: 20px;
 }
 
-.mainContainer div:nth-child(3) > p {
+.main-container div:nth-child(3) > p {
     display: flex;
     justify-content: center;
     color: white;
@@ -93,7 +93,7 @@ main {
     padding: 3px;
 }
 
-.mainContainer div:nth-child(1) > b, .mainContainer div:nth-child(2) > b {
+.main-container div:nth-child(1) > b, .main-container div:nth-child(2) > b {
     font-size: 50px;
     color: white;
     text-transform: uppercase;
@@ -101,7 +101,7 @@ main {
     margin: 0;
 }
 
-.mainContainer button {
+.main-container button {
 
     text-transform: uppercase;
     color: white;
@@ -114,7 +114,7 @@ main {
     border-radius: 2px;
 }
 
-.mainContainer button:hover {
+.main-container button:hover {
     background-color: blue;
 }
 
@@ -127,13 +127,13 @@ main {
     opacity: 0.9;
 
 }
-.answerSize{
+.answer-size{
     width: 60px;
     height: 60px;
 }
 
 /*features*/
-.featuresContainer {
+.features-container {
     width: 100%;
     height: 690px;
     padding-top: 120px;
@@ -147,18 +147,25 @@ main {
     font-size: 19px;
 
 }
-.features_one{
+.features-one{
   text-align: center ;
 }
 
-.features .features_one {
+.features .features-one {
     width: 402px;
     height: 270px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-
+}
+.features-two .features-one{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 402px;
+    height: 270px;
+    text-align: center;
 }
 
 .features div:nth-child(1) > p > b,
@@ -176,13 +183,13 @@ main {
     margin: 34px 0 25px 0;
 }
 
-.textInfo {
+.text-info {
     margin: 0;
     line-height: 27px;
     color: #6c7279;
 }
 
-.featuresTwo {
+.features-two {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,7 +198,7 @@ main {
     margin-top: 80px;
 }
 
-.featuresTwo .featuresNextRow {
+.features-two .features-next-row {
     width: 402px;
     height: 270px;
     display: flex;
@@ -201,103 +208,103 @@ main {
 
 }
 
-.featuresTwo div:nth-child(1) > p > b,
-.featuresTwo div:nth-child(2) > p > b,
-.featuresTwo div:nth-child(3) > p > b {
+.features-two div:nth-child(1) > p > b,
+.features-two div:nth-child(2) > p > b,
+.features-two div:nth-child(3) > p > b {
     text-transform: uppercase;
 }
 
-.featuresTwo div:nth-child(2) {
+.features-two div:nth-child(2) {
     margin-right: 95px;
     margin-left: 95px;
 }
 
 /*Works*/
 
-.worksContainer {
+.works-container {
     height: 701px;
 }
 
-.Works_layer_1 {
+.works-layer-1 {
     width: 100%;
     display: flex;
 }
 
-.Works_layer_2 {
+.works-layer-2 {
     width: 100%;
     display: flex;
     margin-top: 0.5px;
 }
 
 
-.Layer35 {
+.layer-35 {
     width: 25%;
     height: 350px;
     background: url(../img/Layer-35.png) center no-repeat;
     background-size: cover;
 }
 
-.Layer36 {
+.layer-36 {
     width: 25%;
     height: 350px;
     background: url(../img/Layer-36.png) center no-repeat;
     background-size: cover;
 }
 
-.Layer37 {
+.layer-37 {
     width: 25%;
     height: 350px;
     background: url(../img/Layer-37.png) center no-repeat;
     background-size: cover;
 }
 
-.Layer38 {
+.layer-38 {
     width: 25%;
     height: 350px;
     background: url(../img/Layer-38.png) center no-repeat;
     background-size: cover;
 }
 
-.Layer39 {
+.layer-39 {
     width: 25%;
     height: 350px;
     background: url(../img/Layer-39.png) center no-repeat;
     background-size: cover;
 }
 
-.Layer40 {
+.layer-40 {
     width: 25%;
     height: 350px;
     background: url(../img/Layer-40.png) center no-repeat;
     background-size: cover;
 }
 
-.Layer41 {
+.layer-41 {
     width: 25%;
     height: 350px;
     background: url(../img/Layer-41.png) center no-repeat;
     background-size: cover;
 }
 
-.Layer42 {
+.layer-42 {
     width: 25%;
     height: 350px;
     background: url(../img/Layer-42.png) center no-repeat;
     background-size: cover;
 }
 
-.Layer35,
-.Layer36,
-.Layer37,
-#filterImage {
+.layer-35,
+.layer-36,
+.layer-37,
+#filter-image {
     margin-right: 0.5px;
 }
 
-.Layer38 {
+.layer-38 {
     margin-left: 0.5px;
 }
 
-#filterImage {
+#filter-image {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -312,23 +319,23 @@ main {
     font-size: 19px;
 }
 
-#filterImage p {
+#filter-image p {
     margin: 0;
     padding: 10px;
 }
 
-#filterImage p:nth-child(1) {
+#filter-image p:nth-child(1) {
     text-transform: uppercase;
 }
 
-.Layer39,
-.Layer40,
-.Layer41 {
+.layer-39,
+.layer-40,
+.layer-41 {
     margin-right: 0.5px;
     margin-top: 0.5px;
 }
 
-.Layer42 {
+.layer-42 {
     margin-left: 0.5px;
 }
 
@@ -341,28 +348,28 @@ main {
 
 }
 
-.item_lady {
+.item-lady {
     width: 270px;
     height: 270px;
     background: url(../img/Layer-30.png) center no-repeat;
     background-size: cover;
 }
 
-.item_man {
+.item-man {
     width: 270px;
     height: 270px;
     background: url(../img/Layer-31.png) center no-repeat;
     background-size: cover;
 }
 
-.item_miss {
+.item-miss {
     width: 270px;
     height: 270px;
     background: url(../img/Layer-32.png) center no-repeat;
     background-size: cover;
 }
 
-.item_missis {
+.item-missis {
     width: 270px;
     height: 270px;
     background: url(../img/Layer-33.png) center no-repeat;
@@ -373,38 +380,38 @@ main {
     margin-right: 30px;
 }
 
-.item_info {
+.item-info {
     width: 270px;
     font-size: 12px;
     color: #6c7279;
     margin-right: 30px;
 }
 
-.teamContainer {
+.team-container {
     display: flex;
     justify-content: center;
     padding-top: 100px;
 }
 
-.infoContainer {
+.info-container {
     display: flex;
     justify-content: center;
 }
 
-.item_info_size {
+.item-info-size {
     margin: 26px 0 0 0;
     font-size: 22px;
     color: #2d3033
 }
 
-.item_info_sizeP {
+.item-info-size-p {
     margin: 11px 0 0 0;
     text-transform: uppercase;
     color: #d54345;
     font-size: 13px;
 }
 
-.item_info p:nth-child(3) {
+.item-info p:nth-child(3) {
     margin: 29px 0 0 0;
     line-height: 21px;
 }
@@ -416,7 +423,7 @@ main {
     margin-top: 30px;
 }
 
-.social_info {
+.social-info {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -426,7 +433,7 @@ main {
     margin-right: 5px;
 }
 
-.icon_twit {
+.icon-twit {
     width: 16px;
     height: 16px;
     padding: 2px;
@@ -434,14 +441,14 @@ main {
 
 }
 
-.icon_in {
+.icon-in {
     width: 16px;
     height: 16px;
     background: url(../img/Shape-11.png) center no-repeat;
     background-size: cover;
 }
 
-.icon_face {
+.icon-face {
     width: 17px;
     height: 17px;
     padding: 2px;
@@ -449,7 +456,7 @@ main {
 
 }
 
-.social_data {
+.social-data {
     width: 270px;
     display: flex;
     margin-right: 30px;
@@ -464,20 +471,20 @@ main {
 
 }
 
-.clientContainer1 {
+.client-container-1 {
     background: url(../img/Layer-19.png) center no-repeat;
     background-size: cover;
     width: 50%;
 }
 
-.clientContainer2 {
+.client-container-2 {
     display: flex;
     justify-content: flex-start;
     background-color: #53354a;
     width: 50%;
 }
 
-.clientContainerInteger {
+.client-container-integer {
     width: auto;
     display: flex;
     align-items: center;
@@ -487,29 +494,26 @@ main {
     margin-top: 100px;
 }
 
-.clientText {
-
+.client-text {
     padding-left: 85px;
 }
 
-.clientContainerInteger p:nth-child(1) {
+.client-container-integer p:nth-child(1) {
     font-family: 'Cardo', serif;
     font-size: 36px;
     margin: 0;
     line-height: 42px;
 }
 
-.clientContainerInteger p:nth-child(2) {
+.client-container-integer p:nth-child(2) {
     font-size: 13px;
     text-transform: uppercase;
     margin: 26px 0 0 0;
 }
 
 .slider {
-
     margin-left: 85px;
     display: flex;
-
     margin-top: 65px;
 }
 
@@ -517,7 +521,7 @@ main {
     background-color: white;
 }
 
-.sliderItems {
+.slider-items {
     width: 10px;
     height: 10px;
     background-color: #c6cacc;
@@ -543,7 +547,7 @@ main {
     margin: 0;
 }
 
-.download_Fusce {
+.download-fusce {
     font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;
@@ -565,14 +569,14 @@ main {
 
 /*footer*/
 
-.footerContainer {
+.footer-container {
     width: 100%;
     height: 340px;
     display: flex;
     flex-direction: column;
 }
 
-.footer_top {
+.footer-top {
     height: 250px;
     background-color: #3a3e64;
     display: flex;
@@ -585,26 +589,26 @@ main {
     margin-right: 160px;
 }
 
-.footer_item {
+.footer-item {
     text-align: center;
     height: 120px;
 }
 
-.footer_item_location {
+.footer-item-location {
     text-transform: uppercase;
     color: white;
     font-weight: bold;
     margin: 0 0 25px 0;
 }
 
-.footer_item_city {
+.footer-item-city {
     color: #a0a2b0;
     font-size: 14px;
     line-height: 22px;
     margin: 0;
 }
 
-.footer_bootom {
+.footer-bootom {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -612,12 +616,12 @@ main {
     background-color: #313454;
 }
 
-.footer_top .social_info {
+.footer-top .social-info {
     border: 2px solid white;
     margin-left: 7px;
 }
 
-.footer_share {
+.footer-share {
     font-size: 14px;
     font-weight: bold;
     color: white;
@@ -625,19 +629,19 @@ main {
     margin: 0 0 25px 0;
 }
 
-.social_data_info {
+.social-data-info {
     display: flex;
 }
 
-.footer_top .icon_twit {
+.footer-top .icon-twit {
     background: url(../img/twit.png) center no-repeat;;
 }
 
-.footer_top .icon_in {
+.footer-top .icon-in {
     background: url(../img/in.png) center no-repeat;;
 }
 
-.footer_top .icon_face {
+.footer-top .icon-face {
     background: url(../img/f.png) center no-repeat;;
 }
 
