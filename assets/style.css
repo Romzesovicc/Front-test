@@ -153,7 +153,6 @@ main {
 
 .features .features-one {
     width: 402px;
-    height: 270px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,7 +163,6 @@ main {
     align-items: center;
     flex-direction: column;
     width: 402px;
-    height: 270px;
     text-align: center;
 }
 

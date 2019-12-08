@@ -28,18 +28,18 @@ const renderData = () => {
                 }
                 return arr;
             };
-            let imagesDelete = document.querySelectorAll('.no-remove');
+            const imagesDelete = document.querySelectorAll('.no-remove');
 
             for (let item of imagesDelete) {
                 item.classList.add('remove');
             }
 
-            let textData = document.querySelectorAll('.text-transform');
+            const textData = document.querySelectorAll('.text-transform');
             for (let item of textData) {
                 item.style.display = 'block'
             }
 
-            let answer = document.querySelectorAll('.answer');
+            const answer = document.querySelectorAll('.answer');
             for (let item of answer) {
                 item.classList.add('answer-size')
             }
